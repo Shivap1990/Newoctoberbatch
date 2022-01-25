@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="4" parallel="tests" name="Test2(failed)">
+    <parameter name="browser" value="iebrowser"/>
+    <classes>
+      <class name="automation.parameterizationtest">
+        <methods>
+          <include name="verifytitle" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- automation.parameterizationtest -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+  <test thread-count="4" parallel="tests" name="Test1(failed)">
+    <parameter name="browser" value="firefoxbrowser"/>
+    <classes>
+      <class name="automation.parameterizationtest">
+        <methods>
+          <include name="verifytitle" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- automation.parameterizationtest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
